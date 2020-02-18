@@ -1,8 +1,8 @@
-QT       += core gui  #QT包含的模块
+QT       += core gui
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets  #大于4版本 包含widgets模块
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++11  #
+CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -17,18 +17,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mybutton.cpp \
-    mywidget.cpp
+    student.cpp \
+    teacher.cpp \
+    widget.cpp
 
 HEADERS += \
-    mybutton.h \
-    mywidget.h
-
-#TARGET = 02    #可以通过这个手动更改 .exe名字
-
-#TEMPLATE = app     #模板 应用程序
+    student.h \
+    teacher.h \
+    widget.h
 
 # Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin    #目标文件路径
+qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
