@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QTreeWidget" name="treeWidget">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>71</y>
+     <width>501</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>英雄</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>介绍</string>
+    </property>
+   </column>
+   <item>
+    <property name="text">
+     <string>力量</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>顶顶顶顶顶顶顶顶顶顶顶顶</string>
+     </property>
+    </item>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
