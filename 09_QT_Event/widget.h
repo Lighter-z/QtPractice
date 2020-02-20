@@ -13,9 +13,15 @@ class Widget : public QWidget
 
 public:
     Widget(QWidget *parent = nullptr);
+    bool eventFilter(QObject * obj, QEvent * e);
     ~Widget();
 
 private:
     Ui::Widget *ui;
+
+    //定时器事件
+    void timerEvent(QTimerEvent * ev);
+    int timerId1 = 0;
+    int timerId2 = 0;
 };
 #endif // WIDGET_H

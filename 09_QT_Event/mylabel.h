@@ -23,6 +23,8 @@ public:
     //鼠标释放
     void mouseReleaseEvent(QMouseEvent *ev);
 
+    //event一般做事件分发，不做拦截使用
+    bool event(QEvent * e);
 
 signals:
 
